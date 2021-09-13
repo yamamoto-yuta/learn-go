@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  go:
+    image: golang:1.16
+    container_name: learn-go
+    environment:
+      HOME: /home
+    volumes:
+      - .:/home
+    working_dir: /home
+    tty: true
